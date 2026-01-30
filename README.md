@@ -11,15 +11,15 @@ and [sora-editor](https://github.com/Rosemoe/sora-editor).
 
 ## Add to your project
 
-![Latest maven release](https://img.shields.io/maven-central/v/dev.mutwakil.androidide.treesitter/android-tree-sitter)
+![Latest maven release](https://img.shields.io/maven-central/v/io.github.wadamzmail.androidide.treesitter/android-tree-sitter)
 
 ```gradle
 // main library
-implementation 'dev.mutwakil.androidide.treesitter:android-tree-sitter:<version>'
+implementation 'io.github.wadamzmail.androidide.treesitter:android-tree-sitter:<version>'
 
 // grammar libraries
 // <language> is the name of the language grammar. e.g. 'java', 'python', 'xml', etc.
-implementation 'dev.mutwakil.androidide.treesitter:tree-sitter-<language>:<version>'
+implementation 'com.itsaky.androidide.treesitter:tree-sitter-<language>:<version>'
 ```
 
 Before using tree sitter, load the native library when appropriate (e.g. in the `onCreate()` method of your `Application` class, or in your activity) :
