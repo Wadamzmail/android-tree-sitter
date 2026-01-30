@@ -11,11 +11,11 @@ and [sora-editor](https://github.com/Rosemoe/sora-editor).
 
 ## Add to your project
 
-![Latest maven release](https://img.shields.io/maven-central/v/io.github.wadamzmail.androidide.treesitter/android-tree-sitter)
+![Latest maven release](https://img.shields.io/maven-central/v/io.github.wadamzmail/android-tree-sitter)
 
 ```gradle
 // main library
-implementation 'io.github.wadamzmail.androidide.treesitter:android-tree-sitter:<version>'
+implementation 'io.github.wadamzmail:android-tree-sitter:<version>'
 
 // grammar libraries
 // <language> is the name of the language grammar. e.g. 'java', 'python', 'xml', etc.

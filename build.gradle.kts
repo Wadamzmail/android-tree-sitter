@@ -91,7 +91,7 @@ subprojects {
 
   plugins.withId("com.vanniktech.maven.publish.base") {
     configure<MavenPublishBaseExtension> {
-      group = "io.github.wadamzmail.androidide.treesitter"
+      group = "io.github.wadamzmail"
       var versionName = rootProject.version.toString()
       if (!System.getenv("PublishToMaven").toBoolean()) {
         versionName = "$versionName-SNAPSHOT"
