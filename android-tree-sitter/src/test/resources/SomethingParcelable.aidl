@@ -1,4 +1,4 @@
-package com.itsaky.androidide.treesitter.test;
+package dev.mutwakil.androidide.treesitter.test;
 
 parcelable SomethingDefinedSomewhere;
 

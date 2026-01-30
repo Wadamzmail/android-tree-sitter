@@ -18,9 +18,9 @@
 @file:Suppress("UnstableApiUsage")
 
 import com.android.build.gradle.BaseExtension
-import com.itsaky.androidide.treesitter.BuildTreeSitterTask
-import com.itsaky.androidide.treesitter.CleanTreeSitterBuildTask
-import com.itsaky.androidide.treesitter.projectVersionCode
+import dev.mutwakil.androidide.treesitter.BuildTreeSitterTask
+import dev.mutwakil.androidide.treesitter.CleanTreeSitterBuildTask
+import dev.mutwakil.androidide.treesitter.projectVersionCode
 import com.vanniktech.maven.publish.AndroidSingleVariantLibrary
 import com.vanniktech.maven.publish.JavaLibrary
 import com.vanniktech.maven.publish.JavadocJar
@@ -91,7 +91,7 @@ subprojects {
 
   plugins.withId("com.vanniktech.maven.publish.base") {
     configure<MavenPublishBaseExtension> {
-      group = "com.itsaky.androidide.treesitter"
+      group = "io.github.wadamzmail.androidide.treesitter"
       var versionName = rootProject.version.toString()
       if (!System.getenv("PublishToMaven").toBoolean()) {
         versionName = "$versionName-SNAPSHOT"
@@ -106,23 +106,23 @@ subprojects {
           else project.description)
 
         inceptionYear.set("2022")
-        url.set("https://github.com/itsaky/android-tree-sitter/")
+        url.set("https://github.dev/mutwakil/android-tree-sitter/")
 
         licenses {
           license {
             name.set("LGPL-v2.1")
             url.set(
-              "https://github.com/itsaky/android-tree-sitter/blob/main/LICENSE")
+              "https://github.dev/mutwakil/android-tree-sitter/blob/main/LICENSE")
             distribution.set("repo")
           }
         }
 
         scm {
-          url.set("https://github.com/itsaky/android-tree-sitter/")
+          url.set("https://github.dev/mutwakil/android-tree-sitter/")
           connection.set(
-            "scm:git:git://github.com/itsaky/android-tree-sitter.git")
+            "scm:git:git://github.dev/mutwakil/android-tree-sitter.git")
           developerConnection.set(
-            "scm:git:ssh://git@github.com/itsaky/android-tree-sitter.git")
+            "scm:git:ssh://git@github.dev/mutwakil/android-tree-sitter.git")
         }
 
         developers {
