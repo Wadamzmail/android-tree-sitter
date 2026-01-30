@@ -27,7 +27,6 @@ android {
 
     defaultConfig {
         applicationId = "dev.mutwakil.androidide.androidtreesitter"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
