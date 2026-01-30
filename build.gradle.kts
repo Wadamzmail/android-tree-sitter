@@ -91,7 +91,7 @@ subprojects {
 
   plugins.withId("com.vanniktech.maven.publish.base") {
     configure<MavenPublishBaseExtension> {
-      group = "dev.mutwakil.androidide.treesitter"
+      group = "io.github.wadamzmail.androidide.treesitter"
       var versionName = rootProject.version.toString()
       if (!System.getenv("PublishToMaven").toBoolean()) {
         versionName = "$versionName-SNAPSHOT"
@@ -161,7 +161,7 @@ fun Project.configureTsModule() {
   extensions.configure<BaseExtension> {
     val grammarName = project.project.name.substringAfter("tree-sitter-", "")
     if (grammarName.isNotBlank()) {
-      namespace = "dev.mutwakil.androidide.treesitter.$grammarName"
+      namespace = "com.itsaky.androidide.treesitter.$grammarName"
       logger.lifecycle("Set namespace '$namespace' to $project")
     }
 
