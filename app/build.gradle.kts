@@ -22,11 +22,12 @@ plugins {
 }
 
 android {
-    namespace = "com.itsaky.androidide.androidtreesitter"
+    namespace = "dev.mutwakil.androidide.androidtreesitter"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.itsaky.androidide.androidtreesitter"
+        applicationId = "dev.mutwakil.androidide.androidtreesitter"
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 

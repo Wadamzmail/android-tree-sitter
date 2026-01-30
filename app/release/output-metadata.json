@@ -4,7 +4,11 @@
     "type": "APK",
     "kind": "Directory"
   },
+<<<<<<< HEAD
   "applicationId": "com.itsaky.androidide.androidtreesitter",
+=======
+  "applicationId": "dev.mutwakil.androidide.androidtreesitter",
+>>>>>>> 5f5d5e8 (init)
   "variantName": "release",
   "elements": [
     {

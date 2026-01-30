@@ -14,7 +14,7 @@
  *   You should have received a copy of the GNU General Public License
  *  along with android-tree-sitter.  If not, see <https://www.gnu.org/licenses/>.
  */
-package com.itsaky.androidide.androidtreesitter
+package dev.mutwakil.androidide.androidtreesitter
 
 import android.R.layout
 import android.annotation.SuppressLint
@@ -28,23 +28,23 @@ import android.view.MenuItem
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.itsaky.androidide.androidtreesitter.databinding.ActivityMainBinding
-import com.itsaky.androidide.androidtreesitter.databinding.ContentMainBinding
-import com.itsaky.androidide.androidtreesitter.databinding.LayoutTextInputBinding
-import com.itsaky.androidide.treesitter.TSLanguage
-import com.itsaky.androidide.treesitter.TSLanguageCache
-import com.itsaky.androidide.treesitter.TSParser
-import com.itsaky.androidide.treesitter.TSQuery
-import com.itsaky.androidide.treesitter.TSTreeCursor
-import com.itsaky.androidide.treesitter.TreeSitter
-import com.itsaky.androidide.treesitter.java.TSLanguageJava
-import com.itsaky.androidide.treesitter.json.TSLanguageJson
-import com.itsaky.androidide.treesitter.kotlin.TSLanguageKotlin
-import com.itsaky.androidide.treesitter.log.TSLanguageLog
-import com.itsaky.androidide.treesitter.python.TSLanguagePython
-import com.itsaky.androidide.treesitter.string.UTF16String
-import com.itsaky.androidide.treesitter.string.UTF16StringFactory
-import com.itsaky.androidide.treesitter.xml.TSLanguageXml
+import dev.mutwakil.androidide.androidtreesitter.databinding.ActivityMainBinding
+import dev.mutwakil.androidide.androidtreesitter.databinding.ContentMainBinding
+import dev.mutwakil.androidide.androidtreesitter.databinding.LayoutTextInputBinding
+import dev.mutwakil.androidide.treesitter.TSLanguage
+import dev.mutwakil.androidide.treesitter.TSLanguageCache
+import dev.mutwakil.androidide.treesitter.TSParser
+import dev.mutwakil.androidide.treesitter.TSQuery
+import dev.mutwakil.androidide.treesitter.TSTreeCursor
+import dev.mutwakil.androidide.treesitter.TreeSitter
+import dev.mutwakil.androidide.treesitter.java.TSLanguageJava
+import dev.mutwakil.androidide.treesitter.json.TSLanguageJson
+import dev.mutwakil.androidide.treesitter.kotlin.TSLanguageKotlin
+import dev.mutwakil.androidide.treesitter.log.TSLanguageLog
+import dev.mutwakil.androidide.treesitter.python.TSLanguagePython
+import dev.mutwakil.androidide.treesitter.string.UTF16String
+import dev.mutwakil.androidide.treesitter.string.UTF16StringFactory
+import dev.mutwakil.androidide.treesitter.xml.TSLanguageXml
 import kotlinx.coroutines.CoroutineName
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

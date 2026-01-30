@@ -18,9 +18,15 @@
 @file:Suppress("UnstableApiUsage")
 
 import com.android.build.gradle.BaseExtension
+<<<<<<< HEAD
 import com.itsaky.androidide.treesitter.BuildTreeSitterTask
 import com.itsaky.androidide.treesitter.CleanTreeSitterBuildTask
 import com.itsaky.androidide.treesitter.projectVersionCode
+=======
+import dev.mutwakil.androidide.treesitter.BuildTreeSitterTask
+import dev.mutwakil.androidide.treesitter.CleanTreeSitterBuildTask
+import dev.mutwakil.androidide.treesitter.projectVersionCode
+>>>>>>> 5f5d5e8 (init)
 import com.vanniktech.maven.publish.AndroidSingleVariantLibrary
 import com.vanniktech.maven.publish.JavaLibrary
 import com.vanniktech.maven.publish.JavadocJar
@@ -91,7 +97,11 @@ subprojects {
 
   plugins.withId("com.vanniktech.maven.publish.base") {
     configure<MavenPublishBaseExtension> {
+<<<<<<< HEAD
       group = "com.itsaky.androidide.treesitter"
+=======
+      group = "dev.mutwakil.androidide.treesitter"
+>>>>>>> 5f5d5e8 (init)
       var versionName = rootProject.version.toString()
       if (!System.getenv("PublishToMaven").toBoolean()) {
         versionName = "$versionName-SNAPSHOT"
@@ -106,23 +116,39 @@ subprojects {
           else project.description)
 
         inceptionYear.set("2022")
+<<<<<<< HEAD
         url.set("https://github.com/itsaky/android-tree-sitter/")
+=======
+        url.set("https://github.dev/mutwakil/android-tree-sitter/")
+>>>>>>> 5f5d5e8 (init)
 
         licenses {
           license {
             name.set("LGPL-v2.1")
             url.set(
+<<<<<<< HEAD
               "https://github.com/itsaky/android-tree-sitter/blob/main/LICENSE")
+=======
+              "https://github.dev/mutwakil/android-tree-sitter/blob/main/LICENSE")
+>>>>>>> 5f5d5e8 (init)
             distribution.set("repo")
           }
         }
 
         scm {
+<<<<<<< HEAD
           url.set("https://github.com/itsaky/android-tree-sitter/")
           connection.set(
             "scm:git:git://github.com/itsaky/android-tree-sitter.git")
           developerConnection.set(
             "scm:git:ssh://git@github.com/itsaky/android-tree-sitter.git")
+=======
+          url.set("https://github.dev/mutwakil/android-tree-sitter/")
+          connection.set(
+            "scm:git:git://github.dev/mutwakil/android-tree-sitter.git")
+          developerConnection.set(
+            "scm:git:ssh://git@github.dev/mutwakil/android-tree-sitter.git")
+>>>>>>> 5f5d5e8 (init)
         }
 
         developers {
@@ -161,7 +187,11 @@ fun Project.configureTsModule() {
   extensions.configure<BaseExtension> {
     val grammarName = project.project.name.substringAfter("tree-sitter-", "")
     if (grammarName.isNotBlank()) {
+<<<<<<< HEAD
       namespace = "com.itsaky.androidide.treesitter.$grammarName"
+=======
+      namespace = "dev.mutwakil.androidide.treesitter.$grammarName"
+>>>>>>> 5f5d5e8 (init)
       logger.lifecycle("Set namespace '$namespace' to $project")
     }
 

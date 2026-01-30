@@ -90,60 +90,107 @@ static jmethodID factory_createQueryPredicateStepArr;
 void onLoad(JNIEnv *env) {
 
   _loadClass(objectFactoryClass,
+<<<<<<< HEAD
              "com/itsaky/androidide/treesitter/internal/NativeObjectFactory")
+=======
+             "dev/mutwakil/androidide/treesitter/internal/NativeObjectFactory")
+>>>>>>> 5f5d5e8 (init)
 
   _loadStaticMethod(factory_createNode,
                     objectFactoryClass,
                     "createNode",
+<<<<<<< HEAD
                     "(IIIIJJ)Lcom/itsaky/androidide/treesitter/TSNode;")
+=======
+                    "(IIIIJJ)Ldev/mutwakil/androidide/treesitter/TSNode;")
+>>>>>>> 5f5d5e8 (init)
 
   _loadStaticMethod(factory_createTreeCursorNode,
                     objectFactoryClass,
                     "createTreeCursorNode",
+<<<<<<< HEAD
                     "(Ljava/lang/String;Ljava/lang/String;II)Lcom/itsaky/androidide/treesitter/TSTreeCursorNode;")
+=======
+                    "(Ljava/lang/String;Ljava/lang/String;II)Ldev/mutwakil/androidide/treesitter/TSTreeCursorNode;")
+>>>>>>> 5f5d5e8 (init)
 
   _loadStaticMethod(factory_createPoint,
                     objectFactoryClass,
                     "createPoint",
+<<<<<<< HEAD
                     "(II)Lcom/itsaky/androidide/treesitter/TSPoint;")
+=======
+                    "(II)Ldev/mutwakil/androidide/treesitter/TSPoint;")
+>>>>>>> 5f5d5e8 (init)
 
   _loadStaticMethod(factory_createRange,
                     objectFactoryClass,
                     "createRange",
+<<<<<<< HEAD
                     "(IIIIII)Lcom/itsaky/androidide/treesitter/TSRange;")
+=======
+                    "(IIIIII)Ldev/mutwakil/androidide/treesitter/TSRange;")
+>>>>>>> 5f5d5e8 (init)
 
   _loadStaticMethod(factory_createRangeArr,
                     objectFactoryClass,
                     "createRangeArr",
+<<<<<<< HEAD
                     "(I)[Lcom/itsaky/androidide/treesitter/TSRange;")
+=======
+                    "(I)[Ldev/mutwakil/androidide/treesitter/TSRange;")
+>>>>>>> 5f5d5e8 (init)
 
   _loadStaticMethod(factory_createInputEdit,
                     objectFactoryClass,
                     "createInputEdit",
+<<<<<<< HEAD
                     "(IIIIIIIII)Lcom/itsaky/androidide/treesitter/TSInputEdit;")
+=======
+                    "(IIIIIIIII)Ldev/mutwakil/androidide/treesitter/TSInputEdit;")
+>>>>>>> 5f5d5e8 (init)
 
   _loadStaticMethod(factory_createQueryMatch,
                     objectFactoryClass,
                     "createQueryMatch",
+<<<<<<< HEAD
                     "(II[Lcom/itsaky/androidide/treesitter/TSQueryCapture;)Lcom/itsaky/androidide/treesitter/TSQueryMatch;")
+=======
+                    "(II[Ldev/mutwakil/androidide/treesitter/TSQueryCapture;)Ldev/mutwakil/androidide/treesitter/TSQueryMatch;")
+>>>>>>> 5f5d5e8 (init)
 
   _loadStaticMethod(factory_createQueryCapture,
                     objectFactoryClass,
                     "createQueryCapture",
+<<<<<<< HEAD
                     "(IIIIIJJ)Lcom/itsaky/androidide/treesitter/TSQueryCapture;")
+=======
+                    "(IIIIIJJ)Ldev/mutwakil/androidide/treesitter/TSQueryCapture;")
+>>>>>>> 5f5d5e8 (init)
 
   _loadStaticMethod(factory_createQueryPredicateStep,
                     objectFactoryClass,
                     "createQueryPredicateStep",
+<<<<<<< HEAD
                     "(II)Lcom/itsaky/androidide/treesitter/TSQueryPredicateStep;")
+=======
+                    "(II)Ldev/mutwakil/androidide/treesitter/TSQueryPredicateStep;")
+>>>>>>> 5f5d5e8 (init)
 
   _loadStaticMethod(factory_createQueryPredicateStepArr,
                     objectFactoryClass,
                     "createQueryPredicateStepArr",
+<<<<<<< HEAD
                     "(I)[Lcom/itsaky/androidide/treesitter/TSQueryPredicateStep;")
 
   // Node
   _loadClass(nodeClass, "com/itsaky/androidide/treesitter/TSNode")
+=======
+                    "(I)[Ldev/mutwakil/androidide/treesitter/TSQueryPredicateStep;")
+
+  // Node
+  _loadClass(nodeClass, "dev/mutwakil/androidide/treesitter/TSNode")
+>>>>>>> 5f5d5e8 (init)
   _loadField(nodeContext0Field, nodeClass, "context0", "I")
   _loadField(nodeContext1Field, nodeClass, "context1", "I")
   _loadField(nodeContext2Field, nodeClass, "context2", "I")
@@ -153,7 +200,11 @@ void onLoad(JNIEnv *env) {
 
   // TreeCursorNode
   _loadClass(treeCursorNodeClass,
+<<<<<<< HEAD
              "com/itsaky/androidide/treesitter/TSTreeCursorNode")
+=======
+             "dev/mutwakil/androidide/treesitter/TSTreeCursorNode")
+>>>>>>> 5f5d5e8 (init)
   _loadField(treeCursorNodeTypeField, treeCursorNodeClass, "type",
              "Ljava/lang/String;")
   _loadField(treeCursorNodeNameField, treeCursorNodeClass, "name",
@@ -163,11 +214,16 @@ void onLoad(JNIEnv *env) {
   _loadField(treeCursorNodeEndByteField, treeCursorNodeClass, "endByte", "I")
 
   // TSPoint
+<<<<<<< HEAD
   _loadClass(pointClass, "com/itsaky/androidide/treesitter/TSPoint")
+=======
+  _loadClass(pointClass, "dev/mutwakil/androidide/treesitter/TSPoint")
+>>>>>>> 5f5d5e8 (init)
   _loadField(pointRowField, pointClass, "row", "I")
   _loadField(pointColumnField, pointClass, "column", "I")
 
   // TSRange
+<<<<<<< HEAD
   _loadClass(rangeClass, "com/itsaky/androidide/treesitter/TSRange")
   _loadField(rangeClassStartByteField, rangeClass, "startByte", "I")
   _loadField(rangeClassEndByteField, rangeClass, "endByte", "I")
@@ -178,10 +234,23 @@ void onLoad(JNIEnv *env) {
 
   // TSInputEdit
   _loadClass(inputEditClass, "com/itsaky/androidide/treesitter/TSInputEdit")
+=======
+  _loadClass(rangeClass, "dev/mutwakil/androidide/treesitter/TSRange")
+  _loadField(rangeClassStartByteField, rangeClass, "startByte", "I")
+  _loadField(rangeClassEndByteField, rangeClass, "endByte", "I")
+  _loadField(rangeClassStartPointField, rangeClass, "startPoint",
+             "Ldev/mutwakil/androidide/treesitter/TSPoint;")
+  _loadField(rangeClassEndPointField, rangeClass, "endPoint",
+             "Ldev/mutwakil/androidide/treesitter/TSPoint;")
+
+  // TSInputEdit
+  _loadClass(inputEditClass, "dev/mutwakil/androidide/treesitter/TSInputEdit")
+>>>>>>> 5f5d5e8 (init)
   _loadField(inputEditStartByteField, inputEditClass, "startByte", "I")
   _loadField(inputEditOldEndByteField, inputEditClass, "oldEndByte", "I")
   _loadField(inputEditNewEndByteField, inputEditClass, "newEndByte", "I")
   _loadField(inputEditStartPointField, inputEditClass, "startPoint",
+<<<<<<< HEAD
              "Lcom/itsaky/androidide/treesitter/TSPoint;")
   _loadField(inputEditOldEndPointField, inputEditClass, "oldEndPoint",
              "Lcom/itsaky/androidide/treesitter/TSPoint;")
@@ -204,6 +273,30 @@ void onLoad(JNIEnv *env) {
   // TSQueryPredicateStep
   _loadClass(queryPredicateStepClass,
              "com/itsaky/androidide/treesitter/TSQueryPredicateStep")
+=======
+             "Ldev/mutwakil/androidide/treesitter/TSPoint;")
+  _loadField(inputEditOldEndPointField, inputEditClass, "oldEndPoint",
+             "Ldev/mutwakil/androidide/treesitter/TSPoint;")
+  _loadField(inputEditNewEndPointField, inputEditClass, "newEndPoint",
+             "Ldev/mutwakil/androidide/treesitter/TSPoint;")
+
+  // TSQueryMatch
+  _loadClass(matchClass, "dev/mutwakil/androidide/treesitter/TSQueryMatch")
+  _loadField(matchClassIdField, matchClass, "id", "I")
+  _loadField(matchClassPatternIndexField, matchClass, "patternIndex", "I")
+  _loadField(matchClassCapturesField, matchClass, "captures",
+             "[Ldev/mutwakil/androidide/treesitter/TSQueryCapture;")
+
+  // TSQueryCapture
+  _loadClass(captureClass, "dev/mutwakil/androidide/treesitter/TSQueryCapture")
+  _loadField(captureClassIndexField, captureClass, "index", "I")
+  _loadField(captureClassNodeField, captureClass, "node",
+             "Ldev/mutwakil/androidide/treesitter/TSNode;")
+
+  // TSQueryPredicateStep
+  _loadClass(queryPredicateStepClass,
+             "dev/mutwakil/androidide/treesitter/TSQueryPredicateStep")
+>>>>>>> 5f5d5e8 (init)
   _loadField(queryPredicateStepTypeField, queryPredicateStepClass, "type",
              "I")
   _loadField(queryPredicateStepValueIdField, queryPredicateStepClass,

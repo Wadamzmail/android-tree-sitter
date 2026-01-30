@@ -26,17 +26,29 @@ gradlePlugin {
     plugins {
         create("android-tree-sitter.dynamic-modules") {
             id = "android-tree-sitter.dynamic-modules"
+<<<<<<< HEAD
             implementationClass = "com.itsaky.androidide.treesitter.DynamicModulePlugin"
+=======
+            implementationClass = "dev.mutwakil.androidide.treesitter.DynamicModulePlugin"
+>>>>>>> 5f5d5e8 (init)
         }
 
         create("android-tree-sitter.ts") {
             id = "android-tree-sitter.ts"
+<<<<<<< HEAD
             implementationClass = "com.itsaky.androidide.treesitter.TreeSitterPlugin"
+=======
+            implementationClass = "dev.mutwakil.androidide.treesitter.TreeSitterPlugin"
+>>>>>>> 5f5d5e8 (init)
         }
 
         create("android-tree-sitter.ts-grammar") {
             id = "android-tree-sitter.ts-grammar"
+<<<<<<< HEAD
             implementationClass = "com.itsaky.androidide.treesitter.TsGrammarPlugin"
+=======
+            implementationClass = "dev.mutwakil.androidide.treesitter.TsGrammarPlugin"
+>>>>>>> 5f5d5e8 (init)
         }
     }
 }
