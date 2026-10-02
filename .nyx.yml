@@ -68,6 +68,6 @@ services:
     github:
       type: GITHUB
       options:
-        REPOSITORY_OWNER: "AndroidIDEOfficial"
+        REPOSITORY_OWNER: "Wadamzmail"
         REPOSITORY_NAME: "android-tree-sitter"
         AUTHENTICATION_TOKEN: "{{#environmentVariable}}GH_TOKEN{{/environmentVariable}}"
